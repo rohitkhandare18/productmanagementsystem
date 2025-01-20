@@ -33,17 +33,17 @@ public class ProductCategory {
 	    }
 
 	    @PostMapping
-	    public Product createProduct(@RequestBody Product product) {
+	    public Product makeProduct(@RequestBody Product product) {
 	        return productService.createProduct(product);
 	    }
 
 	    @PutMapping("/{id}")
-	    public Product updateProduct(@PathVariable Long id, @RequestBody Product product) {
+	    public Product upgradeProduct(@PathVariable Long id, @RequestBody Product product) {
 	        return productService.updateProduct(id, product);
 	    }
 
 	    @DeleteMapping("/{id}")
-	    public void deleteProduct(@PathVariable Long id) {
+	    public void removeProduct(@PathVariable Long id) {
 	        productService.deleteProduct(id);
 	    }
 
